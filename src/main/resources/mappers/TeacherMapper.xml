@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="TeacherMapper">
+  	<insert id="joinTeacher" parameterType="com.choa.member.teacher.TeacherDTO">
+  		insert into student values(#{id}, #{subject}, sysdate)
+  	</insert>
+  	
+  	<select id="memberPage" parameterType="java.lang.String" resultType="com.choa.member.teacher.TeacherDTO">
+  		select * from teacher where tid=#{id}
+  	</select> 	
+  </mapper>

@@ -14,7 +14,7 @@ public class StudentDAOImplTest extends MyAbstractTestUnit{
    private StudentDAOImpl studentDAOImpl;
    @Autowired
    private StudentServiceImpl studentServiceImpl;
-   private static StudentDTO studentDTO;
+   /*private static StudentDTO studentDTO;*/
    
    @Test
    public void test() throws Exception{

@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
   <mapper namespace="StudentMapper">
-  	<select id="memberLogin" parameterType="com.choa.member.MemberDTO" resultType="com.choa.member.StudentDTO">
+  	<select id="memberLogin" parameterType="com.choa.member.MemberDTO" resultType="com.choa.member.student.StudentDTO">
   		select m.*, s.* from member m, student s 
   		where m.id=#{id} and m.pw=#{pw} and m.id=s.sid;
    	</select>
